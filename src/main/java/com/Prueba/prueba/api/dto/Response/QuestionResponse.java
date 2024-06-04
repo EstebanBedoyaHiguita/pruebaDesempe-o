@@ -1,6 +1,6 @@
 package com.Prueba.prueba.api.dto.Response;
 
-import com.Prueba.prueba.domain.entities.User;
+import com.Prueba.prueba.Utils.enums.Type;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,10 +11,10 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class SurveyResponse {
-    private String Id;
-    private String title;
-    private String description;
-    private User user;
-    private Boolean active;
+public class QuestionResponse {
+    private String id;
+    private String text;
+    private Type type;
+    private SurveyResponse survey;
+    
 }

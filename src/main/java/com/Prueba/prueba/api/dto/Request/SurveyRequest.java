@@ -24,7 +24,7 @@ public class SurveyRequest {
     @NotNull(message = "The survey message is required")
     private LocalDate creation_date;
     @NotNull(message = "The creator id is required")
-    private UserResponse creator_id;
+    private String creator_id;
     private Boolean active;
 
 }
