@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class UserRequest {
-    @NotNull(message = "The id of the user is required")
+    
     private String id;
     @NotNull(message= "The name of the user is required")
     private String name;

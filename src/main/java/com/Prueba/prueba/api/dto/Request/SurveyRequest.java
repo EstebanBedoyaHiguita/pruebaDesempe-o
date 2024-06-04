@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class SurveyRequest {
-    @NotNull(message = "The survey id is required")
+    
     private String Id;
     @NotNull(message = "The survey title is required")
     private String title;

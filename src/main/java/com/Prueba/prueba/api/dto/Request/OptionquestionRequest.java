@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class OptionquestionRequest {
     
-    @NotNull(message = "The option id is required")
+    
     private String id;
     @NotNull(message = "The option text is required")
     private String text;
