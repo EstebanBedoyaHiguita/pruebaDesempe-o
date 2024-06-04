@@ -38,7 +38,7 @@ public class User {
 
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
-    @OneToMany(mappedBy = "creator_idUser",
+    @OneToMany(mappedBy = "creator_id",
     fetch = FetchType.EAGER,
     cascade = CascadeType.ALL,
     orphanRemoval = false)
