@@ -2,6 +2,8 @@ package com.Prueba.prueba.api.dto.Request;
 
 
 
+import java.util.List;
+
 import com.Prueba.prueba.Utils.enums.Type;
 
 import jakarta.validation.constraints.NotNull;
@@ -23,4 +25,5 @@ public class QuestionRequest {
     @NotNull(message = "The survey id is required")
     private String survey_id;
     private Boolean active;
+    private List<String> list_Options;
 }
