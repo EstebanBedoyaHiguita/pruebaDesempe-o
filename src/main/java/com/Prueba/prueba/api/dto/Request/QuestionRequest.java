@@ -17,7 +17,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class QuestionRequest {
-    @NotNull(message = "The question id is required")
+    
     private String id;
     @NotNull(message = "The question text is required")
     private String text;
