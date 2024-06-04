@@ -1,7 +1,7 @@
 package com.Prueba.prueba.infrastructure.services;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
+
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -54,7 +54,7 @@ public class SurveyService  implements ISurveyService{
         .orElseThrow(()-> new IdNotFoundException("user"));
 
         Survey survey = this.requestToEntity(request, new Survey());
-        survey.setCreator_idUser(user);
+        survey.setCreator_id(user);
         return this.entityToResponse(this.surveyRepository.save(survey));
     }
 
@@ -81,7 +81,7 @@ public class SurveyService  implements ISurveyService{
         BeanUtils.copyProperties(entity, response);
 
         UserResponse userDto = new UserResponse();
-        BeanUtils.copyProperties(entity.getCreator_idUser(), userDto);
+        BeanUtils.copyProperties(entity.getCreator_id(), userDto);
         response.setUser_id(userDto);
 
         return response;

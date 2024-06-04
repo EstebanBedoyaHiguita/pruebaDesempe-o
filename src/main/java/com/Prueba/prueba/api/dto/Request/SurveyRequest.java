@@ -19,9 +19,8 @@ public class SurveyRequest {
     private String Id;
     @NotNull(message = "The survey title is required")
     private String title;
-    @NotNull(message = "\"The survey description is required\"")
+    @NotNull(message = "The survey description is required")
     private String description;
-    
     @NotNull(message = "The creator id is required")
     private String creator_id;
     private Boolean active;
