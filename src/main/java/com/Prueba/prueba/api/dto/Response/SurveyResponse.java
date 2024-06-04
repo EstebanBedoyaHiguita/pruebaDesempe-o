@@ -1,5 +1,7 @@
 package com.Prueba.prueba.api.dto.Response;
 
+import java.time.LocalDate;
+
 import com.Prueba.prueba.domain.entities.User;
 
 import lombok.AllArgsConstructor;
@@ -15,6 +17,7 @@ public class SurveyResponse {
     private String Id;
     private String title;
     private String description;
-    private User user;
+    private LocalDate creation_date;
+    private UserResponse user_id;
     private Boolean active;
 }
